@@ -1,0 +1,112 @@
+/* Navbar transparente */
+.transition-navbar {
+    background-color: transparent;
+    transition: all 0.4s ease;
+}
+
+/* scroll */
+.navbar-scrolled {
+    background-color: #0f766e;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+
+
+:root{
+  --nav-height: 85px; 
+}
+
+
+body{
+  padding-top: var(--nav-height);
+}
+
+/* Scroll suave */
+html{
+  scroll-padding-top: var(--nav-height);
+  scroll-behavior: smooth;
+}
+
+/* Hero ocupa pantalla completa */
+.hero{
+    height: 100vh;
+    margin-top: calc(-1 * var(--nav-height));
+    padding-top: var(--nav-height);
+    background: linear-gradient(rgba(15,118,110,0.6), rgba(15,118,110,0.6)),
+                url('img/_D8A4100.jpg') center/cover no-repeat;
+}
+
+h2 {
+    color: #0f766e;
+    margin-bottom: 20px;
+}
+
+.card {
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+.btn-teal {
+    background: white;
+    color: #0f766e;
+    border: 1px solid #0f766e;
+    padding: 12px 26px;
+    border-radius: 50px;
+    box-shadow: 0 4px 12px rgba(15,118,110,0.15);
+    transition: all 0.3s ease;
+}
+
+.btn-teal:hover {
+    background: #0f766e;
+    color: white;
+    box-shadow: 0 8px 20px rgba(15,118,110,0.3);
+}
+/* Animación del logo */
+.navbar-brand img {
+    transition: all 0.3s ease;
+}
+
+.navbar-brand img:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 10px rgba(15,118,110,0.6));
+}
+/* Imágenes de productos */
+.producto-img {
+    height: 200px;
+    object-fit: cover;
+    transition: 0.3s ease;
+}
+
+.producto-img:hover {
+    transform: scale(1.05);
+}
+
+/* Imágenes de sucursal */
+.sucursal-img {
+    height: 350px;
+    object-fit: cover;
+    transition: 0.3s ease;
+}
+
+.sucursal-img:hover {
+    transform: scale(1.03);
+}
+/* Navbar transparente (solo para index) */
+.navbar-transparent {
+  background-color: transparent;
+}
+
+/* Navbar con color (para páginas internas) */
+.navbar-solid {
+  background-color: #0f766e;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Para que el texto se vea siempre */
+.navbar-solid .nav-link,
+.navbar-solid .navbar-brand {
+  color: #fff !important;
+}
